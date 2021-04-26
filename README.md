@@ -7,7 +7,7 @@ This repository houses a Docker image for working with Lighthouse CI.
 You can pull the image from Docker Hub by calling
 
 ```sh
-docker pull @0xc/lhci
+docker pull @0x7463/lhci
 ```
 
 The default CMD is `lhci autorun`, and will make use of the `lighthouserc.json` config.
@@ -19,7 +19,7 @@ The expected run directory is `/app`, so you can mount a volume to that location
 You can run the `lhci` with a given config file by doing the following:
 
 ```sh
-docker run --rm -it -v /path/to/lighthouserc.json:/app/lighthouserc.json @0xc/lhci
+docker run --rm -it -v /path/to/lighthouserc.json:/app/lighthouserc.json @0x7463/lhci
 ```
 
 ## advanced
@@ -77,7 +77,7 @@ docker run --rm \
   -v \$(pwd)/.lighthouserc.js:/app/.lighthouserc.js \
   -v \$(pwd)/.lighthouse-results:/var/tmp/lighthouse-results/ \
   -e TARGET_URL=https://google.com \
-  @0xc/lhci
+  @0x7463/lhci
 ```
 
 ## feedback
